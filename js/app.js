@@ -33,12 +33,21 @@ Enemy.prototype.render = function() {
 /* Now write your own player class
 This class requires an update(), render() and
 a handleInput() method. */
+
+
 //hero class
-  //constructor
-    //properties
-      //x pos
-      //y pos
-      //sprite image
+class Hero {
+  constructor() {
+    this.x = 0;
+    this.y = 0;
+    this.sprite = 'images/char-boy.png';
+  }
+
+  //Draw hero sprite on the x and y coord positions
+  render() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  }
+}
     //methods
       //update position
         //check collision here
@@ -53,6 +62,7 @@ a handleInput() method. */
         //set x and y to starting x and y
 
 //New Hero Object
+const player = new Hero();
 //Init allEnemies array
 //For each enemy create and push new enemy object into above array
 
