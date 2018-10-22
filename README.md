@@ -1,5 +1,4 @@
 # frontend-nanodegree-arcade-game
-===============================
 Built with HTML, CSS, and JavaScript
 
 ## Table of Contents
